@@ -25,7 +25,7 @@ gem "unicorn"
 # for asset compilation
 gem "uglifier"
 
-gem "nokogiri"
+gem "nokogiri", ">= 1.10.8"
 gem "htmlentities"
 
 gem "rdiscount"

@@ -59,8 +59,10 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.21)
+    mini_portile2 (2.4.0)
     multi_json (1.7.1)
-    nokogiri (1.5.6)
+    nokogiri (1.10.8)
+      mini_portile2 (~> 2.4.0)
     polyglot (0.3.3)
     rack (1.4.5)
     rack-cache (1.2)
@@ -136,7 +138,7 @@ DEPENDENCIES
   jquery-rails
   machinist
   mysql2!
-  nokogiri
+  nokogiri (>= 1.10.8)
   rails (= 3.2.13)
   rake (= 10.0.3)
   rdiscount
@@ -145,3 +147,6 @@ DEPENDENCIES
   thinking-sphinx (= 2.0.12)
   uglifier
   unicorn
+
+BUNDLED WITH
+   1.17.3
