@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "rails", "3.2.13"
+gem "rails", "5.0.0"
 
 gem "rake", "10.0.3"
 
@@ -9,7 +9,7 @@ gem "rake", "10.0.3"
 
 gem "mysql2", :git => "git://github.com/brianmario/mysql2.git"
 
-gem "jquery-rails"
+gem "jquery-rails", ">= 4.0.1"
 
 # To use ActiveModel has_secure_password
 gem "bcrypt-ruby", "3.0.0"
@@ -20,7 +20,7 @@ gem "dynamic_form"
 gem "exception_notification", "2.6.1"
 
 # Use unicorn as the app server
-gem "unicorn"
+gem "unicorn", ">= 4.5.0"
 
 # for asset compilation
 gem "uglifier"
@@ -33,7 +33,7 @@ gem "rdiscount"
 gem "thinking-sphinx", "2.0.12"
 
 group :test, :development do
-  gem "rspec-rails", "~> 2.6"
+  gem "rspec-rails", "~> 2.12", ">= 2.12.1"
   gem "machinist"
   gem "sqlite3"
 end
